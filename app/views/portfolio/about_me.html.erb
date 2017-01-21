@@ -1,0 +1,122 @@
+<nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+	        <div class="container-fluid">
+	            <!-- Brand and toggle get grouped for better mobile display -->
+	            <div class="navbar-header">
+	                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" style="color: white">
+	                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+	                </button>
+	               <!--  <a class="navbar-brand page-scroll" href="#page-top">Start Bootstrap</a> -->
+	            </div>
+	            <%= link_to "Megs", root_path, class: "navbar-brand", style: 'font-size: 2em; color: #fed136; font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif; font-weight: bold' %>
+	            <!-- Collect the nav links, forms, and other content for toggling -->
+	            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	                <ul class="nav navbar-nav navbar-right">
+	                    <li class="page-scroll navMenu" >
+		                    <%= link_to "HOME", root_path %>
+		                </li>
+		                <li class="page-scroll navMenu active">
+		                    <%= link_to "ABOUT ME", about_me_path %>
+		                </li>
+		                <li class="page-scroll navMenu">
+		                    <%= link_to "STUDENT LIFE", student_life_path %>
+		                </li>
+		                <li class="page-scroll navMenu">
+		                    <%= link_to "SKILLS", skills_path %>
+		                </li>
+		                <li class="page-scroll navMenu">
+		                    <%= link_to "PROJECTS", projects_path %>
+		                </li>
+		                <li class="page-scroll navMenu">
+		                    <%= link_to "CONTACT ME", contact_me_path %>
+		                </li>
+	                </ul>
+	            </div>
+	            <!-- /.navbar-collapse -->
+	        </div>
+	        <!-- /.container-fluid -->
+	    </nav>
+<div class="row">
+    <div class="col-lg-12 text-center" id="centerDiv">
+        <h2 class="section-heading">ABOUT ME</h2>
+		<%= image_tag("Hairdown.jpg", class: 'img-circle img-responsive')%>
+		<br><br>
+		<div id='btnLinks'>
+            <span><%= link_to image_tag("fb.png", class: 'img-circle img-responsive', title: 'Facebook'), 'https://facebook.com/langas' %></span>
+            <span><%= link_to image_tag("github.png", class: 'img-circle img-responsive', title: 'Github'), 'https://github.com/andreced'%></span>
+        </div>
+    	<br>
+    	<span>I'm Megs </span>
+    	<br><br><br>
+		<span style="font-size: 20px; font-weight: bold"> Andre Cedric Peñalosa </span>
+		<hr>
+    	<br>
+        <div style="width: 100%;">
+            <br><br>
+            <h3 class="section-subheading text-muted" style="margin-bottom: -2em">Who Am I?</h3>
+            <br><br><br><br><br><br>
+            <div class="col-md-4 col-sm-6 portfolio-item">
+                <div class="portfolio-hover">
+                        <div class="portfolio-hover-content">
+                            <i class="fa fa-plus fa-3x"></i>
+                        </div>
+                    </div>
+                    <%= image_tag("Personal.png", class: 'img-responsive',  size: '140x150')%>
+                <div class="portfolio-caption">
+                    <h4>Personal Data</h4>
+                   <p class="text-muted">
+                    	Date of Birth: 		<b>Aug. 24, 1994 </b> 			  <br>
+                    	Age:				<b>22 </b>						  <br>
+                    	Place of Birth:		<b>Lapu-lapu </b>				  <br>
+                    	Civil Status: 		<b>Single </b> 					  <br>
+                    	Citizenship: 		<b>Filipino </b>				  <br>
+                    	Languages: 			<b>English, Filipino, Cebuano </b><br>
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 portfolio-item">
+                <div class="portfolio-hover">
+                        <div class="portfolio-hover-content">
+                            <i class="fa fa-plus fa-3x"></i>
+                        </div>
+                    </div>
+                    <%= image_tag("Education.png", class: 'img-responsive')%>
+               	<div class="portfolio-caption">
+                    <h4>Education</h4>
+                    <p class="text-muted">
+                    	Elementary: <b>	CBD College Institute of Learning (2007)	   		 	</b> <br>
+                    	Secondary:  <b>	University of the Philippines High School Cebu (2011)	</b> <br>
+                    	College:	<b> University of San Carlos (Present)						</b> 
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 portfolio-item" style="margin-top: 10em; margin-left: -25em;">
+               <div class="portfolio-hover">
+                        <div class="portfolio-hover-content">
+                            <i class="fa fa-plus fa-3x"></i>
+                        </div>
+                    </div>
+                    <%= image_tag("work.png", class: 'img-responsive')%>
+                <div class="portfolio-caption">
+                    <h4>Goals</h4>
+                    <p class="text-muted">
+                    	I want to be a self-sufficient professional in the near future, <br>
+                    	a professional that can produce excellent output that I can be proud of. <br> <br>
+
+                    	Aside from that, I want a fulfilling life outside my professional one and <br>
+                    	establish profound connections with society and nature.
+                    </p>
+                </div>
+            </div>
+          
+        </div>
+       
+    </div>
+    
+</div> 
+<br><br><br>
+<div id='footer'>
+	<br>
+	<p class="footer" style="background-color: white; text-align: center; color: black"> 
+		 © Andre Peñalosa Portfolio 2017
+	</p> 
+</div>

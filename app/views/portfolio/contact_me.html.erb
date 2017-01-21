@@ -1,0 +1,110 @@
+<nav id="mainNav" class="navbar navbar-default navbar-fixed-top" >
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" style="color: white">
+                        <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                    </button>
+                   <!--  <a class="navbar-brand page-scroll" href="#page-top">Start Bootstrap</a> -->
+                </div>
+                <%= link_to "Megs", root_path, class: "navbar-brand", style: 'font-size: 2em; color: #fed136; font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif; font-weight: bold' %>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="page-scroll navMenu" >
+                            <%= link_to "HOME", root_path %>
+                        </li>
+                        <li class="page-scroll navMenu">
+                            <%= link_to "ABOUT ME", about_me_path %>
+                        </li>
+                        <li class="page-scroll navMenu">
+                            <%= link_to "STUDENT LIFE", student_life_path %>
+                        </li>
+                        <li class="page-scroll navMenu">
+                            <%= link_to "SKILLS", skills_path %>
+                        </li>
+                        <li class="page-scroll navMenu">
+                            <%= link_to "PROJECTS", projects_path %>
+                        </li>
+                        <li class="page-scroll navMenu active">
+                            <%= link_to "CONTACT ME", contact_me_path %>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container-fluid -->
+        </nav>
+<div class="row">
+    <div class="col-lg-12 text-center" id="centerDiv">
+        <h2 class="section-heading">CONTACT ME</h2>
+        <hr>
+    	<br><br>
+		<div style="width: 30em; display: inline-block;">
+        	<span class="pro">
+        		I am eager to answer any questions about any information posted in this portfolio. To contact me, use any of the platforms listed below.
+			</span>
+		</div>
+    	<br><br><br><br>
+    	<div style="width: 100%;">
+			<br><br>
+			<div class="contact">
+				<%= image_tag("Facebook.jpg", class: 'img-circle img-responsive', style: 'width: 10em; height: 10em')%>
+				<h4>Facebook</h4>
+				<p><%= link_to "Andre Cedric Peñalosa", 'https://facebook.com/langas' %></p>
+			</div>
+			<div class="contact">
+				<%= image_tag("gmail.jpg", class: 'img-circle img-responsive', style: 'width: 10em; height: 10em')%>
+				<h4>Gmail</h4>
+				<p>andreced10@gmail.com</p>
+			</div>
+			<div class="contact">
+				<%= image_tag("instagram.jpg", class: 'img-circle img-responsive', style: 'width: 10em; height: 10em')%>
+				<h4>Instagram</h4>
+				<p>ermaygad</p>
+			</div>
+			<div class="contact">
+				<%= image_tag("phone.jpg", class: 'img-circle img-responsive', style: 'width: 10em; height: 10em')%>
+				<h4>Phone</h4>
+				<p>0942 - 298 - 0826</p>
+			</div>
+			<div class="contact">
+				<%= image_tag("github.jpg", class: 'img-circle img-responsive', style: 'width: 10em; height: 10em')%>
+				<h4>Github</h4>
+				<p><%= link_to "Follow Me", 'https://github.com/andreced' %></p>
+			</div>
+			<div class="contact">
+				<%= image_tag("bitbucket.png", class: 'img-circle img-responsive', style: 'width: 10em; height: 10em')%>
+				<h4>Bitbucket</h4>
+				<p><%= link_to "Follow Me", 'https://bitbucket.org/andreced10/' %></p>
+			</div>
+		</div>	
+			
+	</div>
+</div>
+
+<div class="row">
+	<br>
+
+</div>
+
+<div class="row">
+	<br>
+
+</div>
+
+<div class="row">
+	<br>
+
+</div>
+
+
+
+
+<br><br><br>
+<div id='footer'>
+	<br>
+	<p class="footer" style="background-color: white; text-align: center; color: black"> 
+		 © Andre Peñalosa Portfolio 2017
+	</p> 
+</div>

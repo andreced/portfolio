@@ -1,0 +1,47 @@
+<div id="home">	
+	<nav id="mainNav" class="navbar navbar-default navbar-fixed-top" style="background-color: transparent;">
+	        <div class="container-fluid">
+	            <!-- Brand and toggle get grouped for better mobile display -->
+	            <div class="navbar-header">
+	                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" style="color: white">
+	                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+	                </button>
+	               <!--  <a class="navbar-brand page-scroll" href="#page-top">Start Bootstrap</a> -->
+	            </div>
+
+	            <!-- Collect the nav links, forms, and other content for toggling -->
+	            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	                <ul class="nav navbar-nav navbar-right">
+	                    <li class="page-scroll navMenu active" >
+		                    <%= link_to "HOME", root_path %>
+		                </li>
+		                <li class="page-scroll navMenu">
+		                    <%= link_to "ABOUT ME", about_me_path %>
+		                </li>
+		                <li class="page-scroll navMenu">
+		                    <%= link_to "STUDENT LIFE", student_life_path %>
+		                </li>
+		                <li class="page-scroll navMenu">
+		                    <%= link_to "SKILLS", skills_path %>
+		                </li>
+		                <li class="page-scroll navMenu">
+		                    <%= link_to "PROJECTS", projects_path %>
+		                </li>
+		                <li class="page-scroll navMenu">
+		                    <%= link_to "CONTACT ME", contact_me_path %>
+		                </li>
+	                </ul>
+	            </div>
+	            <!-- /.navbar-collapse -->
+	        </div>
+	        <!-- /.container-fluid -->
+	    </nav>
+	    <div class="intro-text"></div>
+			<div class="welcome-text">Megs</div>
+			<hr>
+		    <div class="meet-text">Excellence Incarnate</div>
+		    <br><br>
+		    <%= link_to "Learn about me", about_me_path, class: "btn btn-primary btn-xl page-scroll" %>
+</div>
+
+

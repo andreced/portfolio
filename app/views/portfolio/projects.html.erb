@@ -1,0 +1,300 @@
+<nav id="mainNav" class="navbar navbar-default navbar-fixed-top" >
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" style="color: white">
+                        <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                    </button>
+                   <!--  <a class="navbar-brand page-scroll" href="#page-top">Start Bootstrap</a> -->
+                </div>
+                <%= link_to "Megs", root_path, class: "navbar-brand", style: 'font-size: 2em; color: #fed136; font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif; font-weight: bold' %>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="page-scroll navMenu" >
+                            <%= link_to "HOME", root_path %>
+                        </li>
+                        <li class="page-scroll navMenu">
+                            <%= link_to "ABOUT ME", about_me_path %>
+                        </li>
+                        <li class="page-scroll navMenu">
+                            <%= link_to "STUDENT LIFE", student_life_path %>
+                        </li>
+                        <li class="page-scroll navMenu">
+                            <%= link_to "SKILLS", skills_path %>
+                        </li>
+                        <li class="page-scroll navMenu active">
+                            <%= link_to "PROJECTS", projects_path %>
+                        </li>
+                        <li class="page-scroll navMenu">
+                            <%= link_to "CONTACT ME", contact_me_path %>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container-fluid -->
+        </nav>
+<div class="row" style="margin-bottom: 10em">
+    <div class="col-lg-12 text-center" id="centerDiv">
+        <h2 class="section-heading">PROJECTS</h2>
+        <%= image_tag("Hairdown.jpg", class: 'img-circle img-responsive')%>
+        <br><br>
+        <div id='btnLinks'>
+            <span><%= link_to image_tag("fb.png", class: 'img-circle img-responsive', title: 'Facebook'), 'https://facebook.com/langas' %></span>
+            <span><%= link_to image_tag("github.png", class: 'img-circle img-responsive', title: 'Github'), 'https://github.com/andreced'%></span>
+        </div>
+        <br>
+       <span style="font-size: 20px; font-weight: bold"> Andre Cedric Peñalosa </span>
+        <hr>
+        <br>
+        <div style="width: 100%;">
+            <br><br>
+            <h3 class="section-subheading text-muted" style="margin-bottom: -2em">PROJECTS INVOLVED / MADE</h3>
+            <br><br><br><br>
+            <div class="col-md-4 col-sm-6 portfolio-item">
+                <a href="#dos" class="portfolio-link" data-toggle="modal">
+                    <div class="portfolio-hover">
+                        <div class="portfolio-hover-content">
+                            <i class="fa fa-plus fa-3x"></i>
+                        </div>
+                    </div>
+                    <%= image_tag("DOS.JPG", class: 'img-responsive', title: 'Delivery Oversight System', size: '140x150')%>
+                </a>
+                <div class="portfolio-caption">
+                    <h4><b>Delivery Oversight System</b></h4>
+                    <p class="text-muted">Delivery Management Application in Java</p>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 portfolio-item">
+                <a href="#job" class="portfolio-link" data-toggle="modal">
+                    <div class="portfolio-hover">
+                        <div class="portfolio-hover-content">
+                            <i class="fa fa-plus fa-3x"></i>
+                        </div>
+                    </div>
+                    <%= image_tag("jrta.PNG", class: 'img-responsive', title: 'Job Tracking Application')%>
+                </a>
+                <div class="portfolio-caption">
+                    <h4><b>Job Tracking Application</b></h4>
+                    <p class="text-muted">Web-based Job Management System</p>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 portfolio-item">
+                <a href="#gt" class="portfolio-link" data-toggle="modal">
+                    <div class="portfolio-hover">
+                        <div class="portfolio-hover-content">
+                            <i class="fa fa-plus fa-3x"></i>
+                        </div>
+                    </div>
+                    <%= image_tag("Growtech.png", class: 'img-responsive', title: 'Growtech Commercial')%>
+                </a>
+                <div class="portfolio-caption">
+                    <h4><b>Growtech Commercial</b></h4>
+                    <p class="text-muted">Web based records system for Growtech Commercial</p>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 portfolio-item">
+                <a href="#mdl" class="portfolio-link" data-toggle="modal">
+                    <div class="portfolio-hover">
+                        <div class="portfolio-hover-content">
+                            <i class="fa fa-plus fa-3x"></i>
+                        </div>
+                    </div>
+                    <%= image_tag("mdl.png", class: 'img-responsive', title: 'Multi PC Distributing Language')%>
+                </a>
+                <div class="portfolio-caption">
+                    <h4><b>Multi PC Distributing Language</b></h4>
+                    <p class="text-muted">Compiler Design Web-based Application</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+ 
+
+<!-- Modals -->
+<div class="portfolio-modal modal fade" id="dos" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <center>
+                <div class="modal-header">
+                    <button aria-hidden="true" class="close" data-dismiss="modal" type="button">×</button>
+                    <h2>Delivery Oversight System</h2>
+                </div>
+                <div class="modal-body">
+                    <%= image_tag("DOS.JPG", title: 'Delivery Oversight System', style: 'width: 75%; height: 50em;')%><br>
+                    <%= image_tag("DOS2.JPG", title: 'Delivery Oversight System', style: 'width: 75%; height: 50em;')%><br>
+                    <%= image_tag("DOS3.JPG", title: 'Delivery Oversight System', style: 'width: 75%; height: 50em;')%>
+                    <br><br>
+                    <p class="item-intro text-muted"><b>About</b></p>
+                    <span>A system that involves delivery management such as processing expected orders and accepting deliveries. Also inlcudes a <i>follow-up</i> communication mechanism </span>
+                    <br><br><br>
+                    
+                    <span>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td><b>OS Platform:</b></td>
+                                    <td style="padding-left:5em">Windows</td>
+                                </tr>
+                                <tr>
+                                    <td><b>Language/s:</b></td>
+                                    <td style="padding-left:5em">Java</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td><b>Database Server:</b></td>
+                                    <td style="padding-left:5em">MySQL Workbench</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </span>
+                    <br><br><br>
+                    <p class="item-intro text-muted"><b>Responsibilities</b></p>
+                    <span>Project Leader, Front and Back End Developer</span>
+                </div>
+                <br><br><br>
+                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+            </center>
+        </div>
+    </div>
+</div>
+<div class="portfolio-modal modal fade" id="job" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <center>
+                <div class="modal-header">
+                    <button aria-hidden="true" class="close" data-dismiss="modal" type="button">×</button>
+                    <h2>Job Tracking Application</h2>
+                </div>
+                <div class="modal-body">
+                    <%= image_tag("jrta.PNG", title: 'Job Tracking Application', style: 'width: 75%; height: 50em;')%>
+                    <br><br>
+                    <p class="item-intro text-muted"><b>About</b></p>
+                    <span>Web based job management system </span>
+                    <br><br><br>
+                    
+                    <span>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td><b>OS Platform:</b></td>
+                                    <td style="padding-left:5em">Windows</td>
+                                </tr>
+                                <tr>
+                                    <td><b>Language/s:</b></td>
+                                    <td style="padding-left:5em">HTML, CSS, slim3 framework, jquery, javascript</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td><b>Database Server:</b></td>
+                                    <td style="padding-left:5em">Google Datastore</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </span>
+                    <br><br><br>
+                    <p class="item-intro text-muted"><b>Responsibilities</b></p>
+                    <span>Back End Developer</span>
+                </div>
+                <br><br><br>
+                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+            </center>
+        </div>
+    </div>
+</div>
+<div class="portfolio-modal modal fade" id="gt" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <center>
+                <div class="modal-header">
+                    <button aria-hidden="true" class="close" data-dismiss="modal" type="button">×</button>
+                    <h2>Growtech Commercial</h2>
+                </div>
+                <div class="modal-body">
+                    <%= image_tag("Growtech.png", title: 'Growtech Commercialn', style: 'width: 100%; height: 50em;')%>
+                    <br><br>
+                    <p class="item-intro text-muted"><b>About</b></p>
+                    <span>Web based records management system for Growtech Commercial </span>
+                    <br><br><br>
+                    
+                    <span>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td><b>OS Platform:</b></td>
+                                    <td style="padding-left:5em">Windows</td>
+                                </tr>
+                                <tr>
+                                    <td><b>Language/s:</b></td>
+                                    <td style="padding-left:5em">HTML, CSS, Jquery, javascript</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td><b>Database Server:</b></td>
+                                    <td style="padding-left:5em">MySQL</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </span>
+                    <br><br><br>
+                    <p class="item-intro text-muted"><b>Responsibilities</b></p>
+                    <span>Front and Back End Developer</span>
+                </div>
+                <br><br><br>
+                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+            </center>
+        </div>
+    </div>
+</div>
+<div class="portfolio-modal modal fade" id="mdl" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <center>
+                <div class="modal-header">
+                    <button aria-hidden="true" class="close" data-dismiss="modal" type="button">×</button>
+                    <h2>Multi PC Distributing Language</h2>
+                </div>
+                <div class="modal-body">
+                    <%= image_tag("mdl.png", title: 'Multi PC Distributing Language', style: 'width: 75%; height: 50em;')%>
+                    <br><br>
+                    <p class="item-intro text-muted"><b>About</b></p>
+                    <span>Web-based user interface for clients who will use the multi PC distributing programming language. </span>
+                    <br><br><br>
+                    
+                    <span>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td><b>OS Platform:</b></td>
+                                    <td style="padding-left:5em">Windows</td>
+                                </tr>
+                                <tr>
+                                    <td><b>Language/s:</b></td>
+                                    <td style="padding-left:5em">Java Web (jsp)</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td><b>Database Server:</b></td>
+                                    <td style="padding-left:5em">MySQL</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </span>
+                    <br><br><br>
+                    <p class="item-intro text-muted"><b>Responsibilities</b></p>
+                    <span>Back End Developer</span>
+                </div>
+                <br><br><br>
+                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+            </center>
+        </div>
+    </div>
+</div>
+<div id='footer'>
+    <br>
+    <p class="footer" style="background-color: white; text-align: center; color: black"> 
+         © Andre Peñalosa Portfolio 2017
+    </p> 
+</div>

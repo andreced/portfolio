@@ -1,0 +1,134 @@
+<nav id="mainNav" class="navbar navbar-default navbar-fixed-top" >
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" style="color: white">
+                        <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                    </button>
+                   <!--  <a class="navbar-brand page-scroll" href="#page-top">Start Bootstrap</a> -->
+                </div>
+                <%= link_to "Megs", root_path, class: "navbar-brand", style: 'font-size: 2em; color: #fed136; font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif; font-weight: bold' %>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="page-scroll navMenu" >
+                            <%= link_to "HOME", root_path %>
+                        </li>
+                        <li class="page-scroll navMenu">
+                            <%= link_to "ABOUT ME", about_me_path %>
+                        </li>
+                        <li class="page-scroll navMenu">
+                            <%= link_to "STUDENT LIFE", student_life_path %>
+                        </li>
+                        <li class="page-scroll navMenu active">
+                            <%= link_to "SKILLS", skills_path %>
+                        </li>
+                        <li class="page-scroll navMenu">
+                            <%= link_to "PROJECTS", projects_path %>
+                        </li>
+                        <li class="page-scroll navMenu">
+                            <%= link_to "CONTACT ME", contact_me_path %>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container-fluid -->
+        </nav>
+<div class="row">
+    <div class="col-lg-12 text-center" id="centerDiv">
+        <h2 class="section-heading">SKILLS</h2>
+        <%= image_tag("Hairdown.jpg", class: 'img-circle img-responsive')%>
+        <br><br>
+        <div id='btnLinks'>
+            <span><%= link_to image_tag("fb.png", class: 'img-circle img-responsive', title: 'Facebook'), 'https://facebook.com/langas' %></span>
+            <span><%= link_to image_tag("github.png", class: 'img-circle img-responsive', title: 'Github'), 'https://github.com/andreced'%></span>
+        </div>
+        <br>
+       <span style="font-size: 20px; font-weight: bold"> Andre Cedric Peñalosa </span>
+        <hr>
+    	<br>
+    	<div style="width: 30em; display: inline-block;">
+        	<span class="pro">
+        		Combining excellent work ethics, vast knowledge of different fields, and a vibrant attitude, makes me a very compelling addition to any team structure.
+			</span>
+		</div>
+		<br><br><br>
+		<h3 class="section-subheading text-muted">PERSONAL SKILLS</h3>
+		<span style="line-height: 3em;">
+			<b>	Highly resilient </b><br>
+			<b>	Able to adjust to different work, social, and cultural conditions</b><br>
+			<b>	Adaptable and quick learner</b><br>
+			<b>	Able to work individually or in a team setting</b><br>
+			<b>	Strong presentation skills</b><br> 
+			<b>	Self and time management skills</b><br>
+			
+		</span>
+		<div style="width: 100%; margin-top: 5em; margin-bottom: 10em">
+			<h3 class="section-subheading text-muted">TECHNICAL SKILLS</h3>
+			<br><br>
+			<div class="progress">
+			 	<div class="progress-bar progress-bar-info progress-bar-striped active" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 90%;">
+            	</div>
+            <span class="progress-type">JAVA</span>
+            <span class="progress-completed">90%</span>
+        	</div>
+        	<br><br><br>
+        	<div class="progress">
+			 	<div class="progress-bar progress-bar-warning progress-bar-striped active" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+            	</div>
+            <span class="progress-type">PYTHON</span>
+            <span class="progress-completed">60%</span>
+        	</div>
+        	<br><br><br>
+        	<div class="progress">
+			 	<div class="progress-bar progress-bar-danger progress-bar-striped active" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
+            	</div>
+            <span class="progress-type">PHP</span>
+            <span class="progress-completed">70%</span>
+        	</div>
+        	<br><br><br>
+        	<div class="progress">
+			 	<div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 80%;">
+            	</div>
+            <span class="progress-type">C</span>
+            <span class="progress-completed">80%</span>
+        	</div>
+        	<br><br><br>
+        	<div class="progress">
+			 	<div class="progress-bar progress-bar-danger progress-bar-striped active" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 40%;">
+            	</div>
+            <span class="progress-type">RUBY</span>
+            <span class="progress-completed">40%</span>
+        	</div>
+        	<br><br><br>
+        	<div class="progress">
+			 	<div class="progress-bar progress-bar-warning progress-bar-striped active" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 85%;">
+            	</div>
+            <span class="progress-type">MYSQL</span>
+            <span class="progress-completed">85%</span>
+        	</div>
+        	<br><br><br>
+        	<div class="progress">
+			 	<div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 75%;">
+            	</div>
+            <span class="progress-type">JAVASCRIPT</span>
+            <span class="progress-completed">75%</span>
+        	</div>
+        	<br><br><br>
+        	<div class="progress">
+			 	<div class="progress-bar progress-bar-info progress-bar-striped active" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
+            	</div>
+            <span class="progress-type">JQUERY</span>
+            <span class="progress-completed">70%</span>
+        	</div>
+   		 </div>
+    </div>
+</div>
+<br>
+<div id='footer'>
+	<br>
+	<p class="footer" style="background-color: white; text-align: center; color: black"> 
+		 © Andre Peñalosa Portfolio 2017
+	</p> 
+</div>
